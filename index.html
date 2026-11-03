@@ -2154,5 +2154,11 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape' && S.sheet) {
 render();
 
 </script>
+<style>
+#ashui-contact{position:fixed;right:14px;bottom:14px;z-index:99999;background:#fffaf0;color:#3a2e22;border:2px solid #3a2e22;border-radius:14px;padding:8px 12px;font:14px/1.4 "LXGW WenKai",system-ui,sans-serif;box-shadow:3px 3px 0 #3a2e22;cursor:pointer;max-width:calc(100vw - 28px)}
+#ashui-contact b{color:#c0392b}
+#ashui-contact small{display:block;font-size:12px;opacity:.75}
+</style>
+<div id="ashui-contact" title="点击复制微信号" onclick="navigator.clipboard&&navigator.clipboard.writeText('clzs668888').then(()=>{this.querySelector('small').textContent='已复制微信号 ✓'})">💬 有问题联系阿水 · 微信 <b>clzs668888</b><small>点一下复制微信号</small></div>
 </body>
 </html>
